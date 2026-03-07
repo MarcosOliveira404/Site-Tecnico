@@ -1,0 +1,99 @@
+PROJETO: SITE DE ASSISTÊNCIA TÉCNICA / LOJA DE INFORMÁTICA
+
+1. DESCRIÇÃO DO PROJETO
+   Este projeto consiste em um site institucional com área de serviços e produtos voltados para manutenção e melhoria de computadores. O objetivo do site é apresentar serviços oferecidos, produtos disponíveis e facilitar o contato do cliente com a empresa através do WhatsApp.
+
+O site foi desenvolvido utilizando tecnologias básicas da web: HTML, CSS e JavaScript. O projeto foi pensado para ser leve, simples de navegar e compatível com dispositivos móveis.
+
+---
+
+2. PROPÓSITO DO SITE
+   O principal propósito do site é:
+
+* Apresentar serviços de assistência técnica.
+* Mostrar produtos disponíveis para upgrade de computadores.
+* Permitir que clientes entrem em contato rapidamente via WhatsApp.
+* Criar uma presença online simples e funcional para o negócio.
+
+---
+
+3. TECNOLOGIAS UTILIZADAS
+
+HTML
+Responsável pela estrutura do site, organização do conteúdo, textos, botões, imagens e seções da página.
+
+CSS
+Utilizado para estilização do site, incluindo:
+
+* Layout das seções
+* Cores e tipografia
+* Responsividade
+* Animações e efeitos visuais
+* Posicionamento de elementos
+
+JavaScript
+Responsável pela interatividade do site, incluindo:
+
+* Abertura e fechamento do menu mobile
+* Controle da janela modal de produtos/serviços
+* Ação do botão de contato via WhatsApp
+
+---
+
+4. FUNCIONALIDADES DO SITE
+
+Menu Responsivo
+O site possui um menu que se adapta para telas menores. Em dispositivos móveis ele se transforma em um menu hambúrguer que pode ser aberto e fechado pelo usuário.
+
+Janela Modal de Produtos
+Ao clicar em determinados produtos ou serviços, uma janela modal é exibida com informações detalhadas sobre o item selecionado.
+
+Overlay de Fundo
+Quando o menu mobile ou o modal é aberto, um fundo escurecido aparece para melhorar o foco do usuário e a experiência visual.
+
+Botão de Contato
+Existe um botão que redireciona o usuário diretamente para o WhatsApp da empresa, facilitando o atendimento e comunicação com clientes.
+
+---
+
+5. ESTRUTURA DO PROJETO
+
+index.html
+Arquivo principal do site contendo toda a estrutura da página.
+
+style.css
+Arquivo responsável por todo o design e layout do site.
+
+script.js
+Arquivo responsável pelas funções JavaScript que controlam menu, modal e interações do usuário.
+
+---
+
+6. PRINCIPAIS FUNÇÕES JAVASCRIPT
+
+abrirMenu()
+Responsável por abrir o menu mobile adicionando a classe "ativo" aos elementos do menu e do overlay.
+
+fecharMenu()
+Remove a classe "ativo" dos elementos, fechando o menu mobile.
+
+abrirModal(produto)
+Abre a janela modal e altera o conteúdo do título e da descrição dependendo do produto selecionado.
+
+fecharModal()
+Fecha a janela modal removendo a classe de ativação.
+
+contato()
+Abre o link do WhatsApp em uma nova aba permitindo que o cliente entre em contato.
+
+---
+
+7. FINALIDADE DO PROJETO
+
+Este projeto tem como finalidade servir como um site simples e funcional para divulgação de serviços de informática e venda de produtos relacionados à melhoria de desempenho de computadores.
+
+Além disso, o projeto também serve como prática de desenvolvimento web utilizando HTML, CSS e JavaScript.
+
+---
+
+FIM DA DOCUMENTAÇÃO

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja | Marcos Rikelme</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="menu">
+
+<div class="logo">Marcos Rikelme</div>
+
+<ul class="menu-desktop">
+<li><a href="index.html">Início</a></li>
+<li><a href="loja.html">Loja</a></li>
+<li><a href="#" onclick="contato()">Contato</a></li>
+</ul>
+
+<div class="hamburger" onclick="abrirMenu()">☰</div>
+
+</nav>
+
+
+<div id="menuMobile" class="menu-mobile">
+
+<a href="index.html">Início</a>
+<a href="loja.html">Loja</a>
+<a href="#" onclick="contato()">Contato</a>
+
+</div>
+
+<div id="overlay" class="overlay" onclick="fecharMenu()"></div>
+
+
+<section class="servicos loja">
+
+<h2>Produtos</h2>
+
+<div class="pesquisa">
+<input 
+type="text" 
+id="campoPesquisa" 
+placeholder="Pesquisar produto..." 
+onkeyup="pesquisarProduto()">
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04">
+
+<h3>SSD 480GB</h3>
+
+<p>Até 10x mais rápido.</p>
+
+<p class="preco">R$ 250</p>
+
+<button onclick="abrirModal('ssd')">Descrição</button>
+<button onclick="contato()">Comprar</button>
+
+</div>
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de">
+
+<h3>Memória RAM 8GB</h3>
+
+<p>Mais desempenho.</p>
+
+<p class="preco">R$ 180</p>
+
+<button onclick="abrirModal('ram')">Descrição</button>
+<button onclick="contato()">Comprar</button>
+
+</div>
+
+
+
+
+</div>
+
+</section>
+
+
+<div id="modal" class="modal">
+
+<div class="modal-content">
+
+<span class="fechar" onclick="fecharModal()">✕</span>
+
+<h2 id="modalTitulo"></h2>
+
+<p id="modalDescricao"></p>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p>© 2026 Marcos Rikelme</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
