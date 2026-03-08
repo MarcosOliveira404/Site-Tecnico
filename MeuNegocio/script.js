@@ -1,71 +1,124 @@
+/* =========================
+MENU MOBILE
+========================= */
+
 function abrirMenu(){
 
-document.getElementById("menuMobile").classList.add("ativo")
-document.getElementById("overlay").classList.add("ativo")
+const menu = document.getElementById("menuMobile")
+const overlay = document.getElementById("overlay")
+
+if(menu && overlay){
+menu.classList.add("ativo")
+overlay.classList.add("ativo")
+}
 
 }
 
 function fecharMenu(){
 
-document.getElementById("menuMobile").classList.remove("ativo")
-document.getElementById("overlay").classList.remove("ativo")
+const menu = document.getElementById("menuMobile")
+const overlay = document.getElementById("overlay")
+
+if(menu && overlay){
+menu.classList.remove("ativo")
+overlay.classList.remove("ativo")
+}
 
 }
 
+
+
+/* =========================
+PRODUTOS (MODAL)
+========================= */
+
+const produtos = {
+
+ssd:{
+titulo:"SSD 480GB",
+descricao:"SSD de alta velocidade que deixa o computador até 10x mais rápido. Ideal para notebooks e desktops."
+},
+
+ram:{
+titulo:"Memória RAM 8GB",
+descricao:"Memória RAM DDR4 de alto desempenho, ideal para multitarefas e melhoria geral do sistema."
+},
+
+hd:{
+titulo:"HD 1TB",
+descricao:"Disco rígido com grande capacidade para armazenar arquivos, fotos, vídeos e programas."
+},
+
+teclado:{
+titulo:"Teclado Gamer",
+descricao:"Teclado confortável e resistente, ideal para trabalho ou jogos."
+},
+
+limpeza:{
+titulo:"Limpeza Completa",
+descricao:"Serviço de limpeza interna com remoção de poeira, troca de pasta térmica e melhoria da ventilação."
+}
+
+}
+
+
+
+/* =========================
+ABRIR MODAL
+========================= */
 
 function abrirModal(produto){
 
-let titulo = document.getElementById("modalTitulo")
-let descricao = document.getElementById("modalDescricao")
+const modal = document.getElementById("modal")
+const titulo = document.getElementById("modalTitulo")
+const descricao = document.getElementById("modalDescricao")
 
-if(produto === "ssd"){
+if(!modal || !titulo || !descricao) return
 
-titulo.innerText = "SSD 480GB"
-descricao.innerText = "SSD de alta velocidade que deixa o computador até 10x mais rápido. Ideal para notebooks e desktops."
+if(produtos[produto]){
 
-}
-
-if(produto === "ram"){
-
-titulo.innerText = "Memória RAM 8GB"
-descricao.innerText = "Memória RAM DDR4 de alto desempenho, ideal para melhorar multitarefas e velocidade do sistema."
+titulo.innerText = produtos[produto].titulo
+descricao.innerText = produtos[produto].descricao
 
 }
 
-if(produto === "limpeza"){
-
-titulo.innerText = "Limpeza Completa"
-descricao.innerText = "Serviço de limpeza interna com remoção de poeira, troca de pasta térmica e melhoria da ventilação."
+modal.classList.add("ativo")
 
 }
 
-/* ABRE MODAL */
 
-document.getElementById("modal").classList.add("ativo")
 
-}
-
+/* =========================
+FECHAR MODAL
+========================= */
 
 function fecharModal(){
 
-/* FECHA MODAL */
+const modal = document.getElementById("modal")
 
-document.getElementById("modal").classList.remove("ativo")
+if(modal){
+modal.classList.remove("ativo")
+}
 
 }
 
 
 
-
-
+/* =========================
+PESQUISAR PRODUTO
+========================= */
 
 function pesquisarProduto(){
 
-let input = document.getElementById("campoPesquisa").value.toLowerCase()
+const campo = document.getElementById("campoPesquisa")
+
+if(!campo) return
+
+let input = campo.value.toLowerCase()
 
 let cards = document.querySelectorAll(".card")
 
-cards.forEach(function(card){
+cards.forEach(card => {
 
 let titulo = card.querySelector("h3").textContent.toLowerCase()
 
@@ -81,18 +134,9 @@ card.style.display = "none"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* =========================
+WHATSAPP
+========================= */
 
 function contato(){
 

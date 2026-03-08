@@ -2,28 +2,40 @@
 <html lang="pt-br">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Loja | Marcos Rikelme</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
+<!-- MENU -->
+
 <nav class="menu">
 
-<div class="logo">Marcos Rikelme</div>
+<div class="logo">Ilhabela Tech</div>
 
 <ul class="menu-desktop">
+
 <li><a href="index.html">Início</a></li>
 <li><a href="loja.html">Loja</a></li>
 <li><a href="#" onclick="contato()">Contato</a></li>
+
 </ul>
 
 <div class="hamburger" onclick="abrirMenu()">☰</div>
 
 </nav>
 
+
+<!-- MENU MOBILE -->
 
 <div id="menuMobile" class="menu-mobile">
 
@@ -33,26 +45,41 @@
 
 </div>
 
+
+<!-- OVERLAY -->
+
 <div id="overlay" class="overlay" onclick="fecharMenu()"></div>
 
+
+
+<!-- LOJA -->
 
 <section class="servicos loja">
 
 <h2>Produtos</h2>
 
 <div class="pesquisa">
+
 <input 
-type="text" 
-id="campoPesquisa" 
-placeholder="Pesquisar produto..." 
+type="text"
+id="campoPesquisa"
+placeholder="Pesquisar produto..."
 onkeyup="pesquisarProduto()">
+
 </div>
+
 
 <div class="cards">
 
+
+<!-- PRODUTO -->
+
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04">
+<img 
+src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04"
+alt="SSD 480GB"
+loading="lazy">
 
 <h3>SSD 480GB</h3>
 
@@ -61,33 +88,83 @@ onkeyup="pesquisarProduto()">
 <p class="preco">R$ 250</p>
 
 <button onclick="abrirModal('ssd')">Descrição</button>
-<button onclick="contato()">Comprar</button>
+
 
 </div>
 
 
+
+<!-- PRODUTO -->
+
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de">
+<img 
+src="https://images.unsplash.com/photo-1563206767-5b18f218e8de"
+alt="Memória RAM 8GB"
+loading="lazy">
 
 <h3>Memória RAM 8GB</h3>
 
-<p>Mais desempenho.</p>
+<p>Mais desempenho para seu PC.</p>
 
 <p class="preco">R$ 180</p>
 
 <button onclick="abrirModal('ram')">Descrição</button>
-<button onclick="contato()">Comprar</button>
+
 
 </div>
 
 
+
+<!-- PRODUTO -->
+
+<div class="card">
+
+<img 
+src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+alt="HD 1TB"
+loading="lazy">
+
+<h3>HD 1TB</h3>
+
+<p>Mais espaço para arquivos.</p>
+
+<p class="preco">R$ 220</p>
+
+<button onclick="abrirModal('hd')">Descrição</button>
+
+</div>
+
+
+
+<!-- PRODUTO -->
+
+<div class="card">
+
+<img 
+src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7"
+alt="Teclado Gamer"
+loading="lazy">
+
+<h3>Teclado Gamer</h3>
+
+<p>Conforto e precisão.</p>
+
+<p class="preco">R$ 120</p>
+
+<button onclick="abrirModal('teclado')">Descrição</button>
+
+
+</div>
 
 
 </div>
 
 </section>
 
+
+
+<!-- MODAL -->
 
 <div id="modal" class="modal">
 
@@ -99,16 +176,33 @@ onkeyup="pesquisarProduto()">
 
 <p id="modalDescricao"></p>
 
-</div>
+<button onclick="contato()">Comprar no WhatsApp</button>
 
 </div>
 
+</div>
+
+
+
+<!-- FOOTER -->
 
 <footer>
 
 <p>© 2026 Marcos Rikelme</p>
 
+<div class="redes">
+
+<a href="#">Instagram</a>
+<a href="#">GitHub</a>
+<a href="#">LinkedIn</a>
+
+</div>
+
 </footer>
+
+
+
+<!-- SCRIPT -->
 
 <script src="script.js"></script>
 
